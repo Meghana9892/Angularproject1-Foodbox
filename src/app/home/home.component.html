@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-lg navbg">
+    <div class="container-fluid">
+      <a class="navbar-brand"   >Foodbox</a>
+      <button
+        class="navbar-toggler" 
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" href="addproduct">Add Product</a></li>
+          <li class="nav-item">
+            <a class="nav-link active" href="">Sign Out</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+      
+    </div>
+  </nav>
+  <br>
+<div class="products">
+    <div class="row">
+        <div class="row">
+            <div class="col-md-12 col-lg-4 mb-4 mb-lg-0" *ngFor="let i of products">
+              <div class="card cardstyle">
+                <div class="d-flex justify-content-between p-3">
+      
+                </div>
+                <img src="https://thumbs.dreamstime.com/b/male-hand-lifts-to-up-glass-cloche-plate-hot-food-restaurant-smoked-time-close-140186395.jpg"
+                  class="card-img-top" alt="Laptop" style="padding-left: 2%; padding-right: 2%;"/>
+                <div class="card-body">
+      
+                  <div class="d-flex justify-content-between mb-3">
+                    <h5 class="mb-0">{{i.id}}</h5>
+              
+                    <h5 class="text-dark mb-0"> {{i.productname}}</h5>
+                    
+                    <h5 class="text-dark mb-0">Rs. {{i.price}}</h5>
+    
+                  </div>
+       
+                </div>
+              </div>
+            </div>    
+    </div>
+    </div>
